@@ -1,0 +1,3 @@
+[submodule "Submodules/EMP"]
+	path = Submodules/EMP
+	url = git@github.com:SchmobertRitz/EMP-Unity.git
