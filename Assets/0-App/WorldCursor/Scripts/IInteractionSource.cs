@@ -1,16 +1,27 @@
+using MaibornWolff.Waypoints.WorldPoints;
 using System;
 
-namespace Robs.Waypoints.WorldCursor
+namespace MaibornWolff.Waypoints.WorldCursor
 {
     public interface IInteractionSource
     {
         Action<IInteractionSource> OnGrabAction
-        { get; }
+        { get; set; }
 
         Action<IInteractionSource> OnUngrabAction
-        { get; }
+        { get; set; }
 
-        bool IsGrabbing
-        { get; }
+        Action<IInteractionSource> OnDeleteAction
+        { get; set; }
+
+        Action<IInteractionSource> OnYesAction
+        { get; set; }
+
+        Action<IInteractionSource> OnNoAction
+        { get; set; }
+
+        Action<WorldPointState, IInteractionSource> OnCreateNewWorldPoint
+        { get; set; }
+
     }
 }
