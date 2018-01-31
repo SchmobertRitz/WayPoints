@@ -9,7 +9,7 @@ namespace MaibornWolff.Waypoints.Avatar
     {
         private ILogger Logger = Debug.logger;
 
-        private string avatarResourcePath = "Avatar/[DebugAvatar]";
+        private string avatarResourcePath = "Avatar/[VoxelHeroAvatar]";
 
         private AvatarBehaviour avatarBehaviour;
         private List<AvatarRemote> listOfAvatarAccesses = new List<AvatarRemote>();
